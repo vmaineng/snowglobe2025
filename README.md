@@ -43,7 +43,7 @@ The project combines **CSS animations, canvas-based snow**, and **image layering
 ## Preview
 
   <a href="https://jd-ai.vercel.app/" target="_blank">
-    <img src="https://github.com/user-attachments/assets/5ba2b7ee-8f48-4c0d-b063-2bdc1ac18700" alt="JD-AI Walkthrough Video" width="80%">
+    <img src="https://github.com/user-attachments/assets/11e8db94-1cc9-4ea5-86c1-3473ec1357e7" alt="Snowglobe" width="80%">
   </a> 
  <img src="https://github.com/user-attachments/assets/7dd568dd-80b4-47b7-830d-42ca546ea2c9" alt="Snowglobe" width="80%">
 
