@@ -42,15 +42,10 @@ The project combines **CSS animations, canvas-based snow**, and **image layering
 
 ## Preview
 
-  <a href="https://jd-ai.vercel.app/" target="_blank">
+  <a href="https://snowglobe2025.vercel.app/" target="_blank">
     <img src="https://github.com/user-attachments/assets/11e8db94-1cc9-4ea5-86c1-3473ec1357e7" alt="Snowglobe" width="80%">
   </a> 
- <img src="https://github.com/user-attachments/assets/7dd568dd-80b4-47b7-830d-42ca546ea2c9" alt="Snowglobe" width="80%">
 
---- 
-##Deployed Site:
-  <a href="https://snowglobe2025.vercel.app/" target="_blank">
-  Site
-  </a>
+
 
 
