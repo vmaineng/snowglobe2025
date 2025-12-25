@@ -13,7 +13,6 @@ export default function SnowGlobe() {
     setTimeout(() => setShaking(false), 400);
   };
 
-  // Mouse parallax
   const handleMove = (e: React.MouseEvent) => {
     if (!sceneRef.current) return;
     const { width, height, left, top } =
