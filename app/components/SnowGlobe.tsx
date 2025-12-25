@@ -1,13 +1,14 @@
 "use client";
 
 import { useState, useRef } from "react";
+import Image from "next/image";
 import CanvasSnow from "./CanvasSnow";
 
 export default function SnowGlobe() {
   const sceneRef = useRef<HTMLDivElement>(null);
   const [shaking, setShaking] = useState<boolean>(false);
+  const [snowIntensity, setSnowIntensity] = useState<number>(140);
 
-  // Shake button
   const shakeGlobe = () => {
     setShaking(true);
     setTimeout(() => setShaking(false), 400);
@@ -30,26 +31,40 @@ export default function SnowGlobe() {
         <div className={`globe ${shaking ? "shaking" : ""}`}>
           <div ref={sceneRef} className="scene">
             <div className="background" />
-            <CanvasSnow intensity={shaking ? 260 : 140} />
+            <Image
+              src="/xmas.png"
+              alt="Face"
+              fill
+              style={{
+                objectFit: "cover",
+                objectPosition: "center 25%",
+              }}
+              className="z-10"
+            />
+            <CanvasSnow
+              intensity={shaking ? snowIntensity * 2 : snowIntensity}
+            />
           </div>
         </div>
         <div className="base" />
-      </div>
 
-      <button
-        onClick={shakeGlobe}
-        style={{
-          marginTop: "20px",
-          padding: "10px 16px",
-          borderRadius: "999px",
-          background: "#ffffff22",
-          color: "white",
-          border: "1px solid #ffffff33",
-          cursor: "pointer",
-        }}
-      >
-        Shake ❄️
-      </button>
+        <div className="bg-center">
+          <button
+            onClick={shakeGlobe}
+            style={{
+              marginTop: "20px",
+              padding: "10px 16px",
+              borderRadius: "999px",
+              background: "#ffffff22",
+              color: "white",
+              border: "1px solid #ffffff33",
+              cursor: "pointer",
+            }}
+          >
+            Shake ❄️
+          </button>
+        </div>
+      </div>
     </>
   );
 }
