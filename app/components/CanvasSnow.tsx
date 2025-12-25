@@ -9,21 +9,32 @@ type Flake = {
   speed: number;
 };
 
-export default function CanvasSnow({ intensity = 120 }) {
+interface CanvasSnowProps {
+  intensity?: number;
+}
+
+export default function CanvasSnow({ intensity = 120 }: CanvasSnowProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const flakes = useRef<Flake[]>([]);
 
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
-
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
     const resize = () => {
-      canvas.width = canvas.offsetWidth;
-      canvas.height = canvas.offsetHeight;
+      const rect = canvas.getBoundingClientRect();
+      canvas.width = rect.width;
+      canvas.height = rect.height;
+
+      // Reset flakes positions inside new canvas size
+      flakes.current.forEach((flake) => {
+        flake.x = Math.random() * canvas.width;
+        flake.y = Math.random() * canvas.height;
+      });
     };
+
     resize();
     window.addEventListener("resize", resize);
 
@@ -47,20 +58,29 @@ export default function CanvasSnow({ intensity = 120 }) {
           flake.y = -5;
           flake.x = Math.random() * canvas.width;
         }
+
         ctx.beginPath();
         ctx.arc(flake.x, flake.y, flake.r, 0, Math.PI * 2);
         ctx.fillStyle = "rgba(255,255,255,0.9)";
         ctx.fill();
       });
+
       animationId = requestAnimationFrame(animate);
     };
+
     animate();
+
     return () => {
       cancelAnimationFrame(animationId);
       window.removeEventListener("resize", resize);
     };
   }, [intensity]);
+
   return (
-    <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none" />
+    <canvas
+      ref={canvasRef}
+      className="absolute inset-0 pointer-events-none"
+      style={{ display: "block" }}
+    />
   );
 }
