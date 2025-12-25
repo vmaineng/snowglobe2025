@@ -24,7 +24,7 @@ The project combines **CSS animations, canvas-based snow**, and **image layering
 ## Features
 - **Interactive Parallax**: The globe subtly moves as users move the cursor.  
 - **Shake Animation**: Clicking the “Shake” button triggers a playful snowstorm animation.  
-- **Snow Intensity Slider**: Users can control the amount of falling snow.  
+- **Snow Intensity Shake**: Users can control the amount of falling snow.  
 - **Customizable Image**: Add your own holiday-themed or personal images to the globe.  
 - **Responsive Design**: Works on multiple screen sizes while maintaining aspect ratio.  
 
@@ -36,7 +36,7 @@ The project combines **CSS animations, canvas-based snow**, and **image layering
 - Implementing **parallax effects** with mouse movement in a React component.  
 - How to **use Next.js Image** component with `object-fit` and `object-position` for proper image scaling and alignment inside a circular container.  
 - Integrating **dynamic state** (snow intensity, shake animation) into a visually rich component.  
-- Structuring **portfolio-ready projects** with clean, maintainable code and responsive design.  
+
 
 ---
 
