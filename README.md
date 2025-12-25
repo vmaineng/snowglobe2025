@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Interactive Snow Globe 🎄
 
-## Getting Started
+## Description
+This interactive snow globe is a holiday-themed React/Next.js project built to showcase front-end development skills. Users can:
 
-First, run the development server:
+- Move their cursor over the globe to create parallax effects  
+- Shake the globe to trigger a snowstorm burst  
+- Adjust the intensity of falling snow  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The project combines **CSS animations, canvas-based snow**, and **image layering** to create a visually engaging, interactive experience. It’s perfect as a **portfolio piece** or a **seasonal social media showcase**.  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technologies Used
+- **React 18** – for building interactive UI components  
+- **Next.js 14** – server-side rendering, routing, and image optimization  
+- **TypeScript** – for type safety and maintainable code  
+- **CSS / Tailwind CSS** – styling, gradients, and animations  
+- **Canvas API** – for creating smooth, continuous snow animations  
+- **Next.js Image component** – optimized image handling for responsive layout  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Features
+- **Interactive Parallax**: The globe subtly moves as users move the cursor.  
+- **Shake Animation**: Clicking the “Shake” button triggers a playful snowstorm animation.  
+- **Snow Intensity Slider**: Users can control the amount of falling snow.  
+- **Customizable Image**: Add your own holiday-themed or personal images to the globe.  
+- **Responsive Design**: Works on multiple screen sizes while maintaining aspect ratio.  
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## What I Learned
+- How to **layer multiple interactive elements** (image + canvas + CSS animations) in a React/Next.js project.  
+- Using the **Canvas API** for smooth, animated snow particles.  
+- Implementing **parallax effects** with mouse movement in a React component.  
+- How to **use Next.js Image** component with `object-fit` and `object-position` for proper image scaling and alignment inside a circular container.  
+- Integrating **dynamic state** (snow intensity, shake animation) into a visually rich component.  
+- Structuring **portfolio-ready projects** with clean, maintainable code and responsive design.  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Preview
+![Snow Globe Screenshot](./public/screenshot.png)  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+--- 
+##Deployed Site:
+Site: https://snowglobe2025.vercel.app/
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
