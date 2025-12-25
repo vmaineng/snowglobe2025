@@ -41,9 +41,12 @@ The project combines **CSS animations, canvas-based snow**, and **image layering
 ---
 
 ## Preview
-![Snow Globe Screenshot](https://github.com/user-attachments/assets/7dd568dd-80b4-47b7-830d-42ca546ea2c9)  
+ <img src="https://github.com/user-attachments/assets/7dd568dd-80b4-47b7-830d-42ca546ea2c9" alt="Snowglobe" width="80%">
 
 --- 
 ##Deployed Site:
-Site: https://snowglobe2025.vercel.app/
+  <a href="https://snowglobe2025.vercel.app/" target="_blank">
+  Site
+  </a>
+
 
