@@ -41,7 +41,7 @@ The project combines **CSS animations, canvas-based snow**, and **image layering
 ---
 
 ## Preview
-![Snow Globe Screenshot](./public/screenshot.png)  
+![Snow Globe Screenshot](https://github.com/user-attachments/assets/7dd568dd-80b4-47b7-830d-42ca546ea2c9)  
 
 --- 
 ##Deployed Site:
